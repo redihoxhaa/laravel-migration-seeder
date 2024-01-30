@@ -1,3 +1,3 @@
 @section('footer')
-    <p>This is the footer section</p>
+    <p class="text-center py-5">Not made with love ©</p>
 @endsection

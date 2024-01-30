@@ -6,3 +6,76 @@
 @import "_partials/utilities.scss";
 @import "_partials/variables.scss";
 @import "_partials/mixins.scss";
+
+header {
+
+    padding: 50px;
+
+    .wrapper {
+
+        h1 {
+            font-size: 50px;
+            white-space: nowrap;
+
+        }
+
+        .pic-container {
+            width: 200px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+main {
+
+    ul {
+
+        li {
+            display: flex;
+
+            .card {
+                width: 100%;
+
+                .nome-azienda {
+                    color: #dc3545;
+                }
+
+                .codice-treno {
+                    color: green;
+                }
+
+                .ritardo {
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 5px;
+                    background-color: #dc3545;
+                }
+
+                .cancellato {
+                    color: #dc3545;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 5px;
+                    background-color: rgb(15, 15, 15);
+                }
+            }
+
+
+        }
+    }
+
+    .btn {
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+        height: 100px;
+
+    }
+}
