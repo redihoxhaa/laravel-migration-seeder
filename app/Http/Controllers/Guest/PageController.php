@@ -19,7 +19,7 @@ class PageController extends Controller
     public function today()
     {
 
-        $trains = Train::where('data_partenza', now()->toDateString())->get();
+        $trains = Train::where('data_partenza', '>=', now()->toDateString())->orderBy('data_partenza')->get();
 
         return view('today', compact('trains'));
     }
